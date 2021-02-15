@@ -14,7 +14,7 @@ class StoryStore {
     @observable error = '';
 
     constructor() {
-        this.baseURL = config.BASE_URL_CARS;
+        this.baseURL = config.BASE_URL_STORY;
     }
 
 

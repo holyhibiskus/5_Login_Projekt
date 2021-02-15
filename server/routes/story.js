@@ -6,10 +6,10 @@ console.log(__dirname);
 //database
 let mysql = require('mysql');
 let connection = mysql.createConnection({
-    host : 'localhost',
-    user : 'root',
-    password : 'SQLP@sswort01',
-    database : 'webapp',
+    host : 'freedb.tech',
+    user : 'freedbtech_holyhibiskus',
+    password : 'storyverse42',
+    database : 'freedbtech_storyverse',
     insecureAuth: true
 });
 
