@@ -51,7 +51,7 @@ router.get('/text', function (req,res){
 router.get('/alltext/:id', function (req,res){
     //res.send(sid);
     connection.query("SELECT * FROM storytext WHERE idstory=" + req.params.id, function (err, rows){
-        res.send({texts: rows});
+        res.send({texts: rows,storyid: req.params.id});
     });
 });
 
