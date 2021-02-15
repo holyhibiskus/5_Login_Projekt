@@ -44,7 +44,14 @@ router.get('/text', function (req,res){
     let tid = req.query.textid;
     //res.send(sid);
     connection.query("SELECT * FROM storytext WHERE idstory=" + sid + " AND idstorytext=" + tid, function (err, rows){
-        res.send({storyText: rows});
+        res.send({texts: rows});
+    });
+});
+
+router.get('/alltext/:id', function (req,res){
+    //res.send(sid);
+    connection.query("SELECT * FROM storytext WHERE idstory=" + req.params.id, function (err, rows){
+        res.send({texts: rows});
     });
 });
 
@@ -91,7 +98,7 @@ router.post('/new',function (req,res,next){
         if (err) {
             req.send(err.message);
         } else{
-            res.send("Story: " + name + " added!");
+            res.send({stories: rows});
         }
     });
 });
