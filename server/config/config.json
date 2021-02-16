@@ -81,12 +81,11 @@
     ]
   },
   "development": {
-    "username": "root",
-    "password": "SQLP@sswort01",
-    "database": "webapp",
-    "host": "127.0.0.1",
+    "username": "freedbtech_holyhibiskus",
+    "password": "storyverse42",
+    "database": "freedbtech_storyverse",
+    "host": "freedb.tech",
     "port": "3306",
     "dialect": "mysql"
   }
 }
-

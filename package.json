@@ -4,7 +4,8 @@
   "private": false,
   "scripts": {
     "start:react": "NODE_ENV=development webpack-dev-server --config ./react/webpack.config.debug.js --content-base dev --inline --hot --history-api-fallback",
-    "start:node": "NODE_ENV=development node server/bin/start.js"
+    "start:node": "NODE_ENV=development node server/bin/start.js",
+    "serve": "NODE_ENV=development node server/bin/start.js"
   },
   "dependencies": {
     "babel-preset-react-app": "3.1.2",
