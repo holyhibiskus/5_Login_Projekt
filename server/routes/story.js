@@ -91,9 +91,9 @@ router.get('/featured', function(req, res, next){
 });
 
 router.post('/new',function (req,res,next){
-    let name = req.body.STORY_NAME || '';
-    let theme = req.body.THEME || '';
-    let creator = req.body.CREATOR || '';
+    let name = req.body.name || '';
+    let theme = req.body.theme || '';
+    let creator = req.body.creator || '';
     connection.query("INSERT INTO stories (title, theme, creator, createdon) VALUES ('"+ name + "', '"+ theme + "', '" + creator + "', NOW())", function (err, rows){
         if (err) {
             req.send(err.message);
