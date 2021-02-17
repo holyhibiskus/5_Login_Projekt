@@ -12,6 +12,7 @@ function jwt() {
             // public routes that don't require authentication
             "/api/users/authenticate",
             "/api/users/register",
+            "/api/story",
             // Diese Zeile bewirkt das alle Ruten keinen Rtoken brauchen
             {url: /\/*/, methods: ['GET', 'OPTIONS']},
             // Alle GET und OPTIONS HTTP Request mit dem muster /api/texts/* brauchen keine Authorisierung
